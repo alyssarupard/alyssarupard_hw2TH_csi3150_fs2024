@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alyssa Rupard - Portfolio</title>
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <h1>Alyssa Rupard - Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html/my_resume.html">Resume</a></li>
+                <li><a href="html/my_fun_facts.html">Fun Facts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <img src="assets/img/profileimage.jpg" alt="an image of me" width="200">
+        <blockquote>
+            "The only way to do great work is to love what you do." — Steve Jobs
+        </blockquote>
+    </section>
+
+    <section>
+        <p>Hello, my name is Alyssa Rupard. I am a senior at Oakland University studying Information Technology with a concentration in Cybersecurity. I have a passion for learning about secure systems and aim to contribute to the IT industry with innovative security solutions. To know more about me, check out my <a href="html/my_resume.html">Resume</a> and <a href="html/my_fun_facts.html">Fun Facts</a> pages.</p>
+    </section>
+
+    <section>
+        <p>Degree Completion Progress:</p>
+        <progress value="96" max="128"></progress>
+        <p>96/128 credits completed</p>
+    </section>
+
+    <footer>
+        <hr>
+        <p>&copy; 2024 Alyssa Rupard</p>
+        <p>Contact: <a href="mailto:alyssarupard11@gmail.com">alyssarupard11@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
