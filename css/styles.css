@@ -1,131 +1,90 @@
-
-/* Basic reset for margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Ensures padding and borders are included in total width and height */
+/* Header container for logo, navbar, and CTA */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 20px;
 }
 
-/* Body styling */
-body {
-    font-family: 'Arial', sans-serif; /* Font for the entire document */
-    line-height: 1.6; /* Improves readability */
-    background-color: #f8f9fa; /* Light grey background for contrast */
-    color: #333; /* Dark text color for contrast */
-    padding: 20px; /* Add some padding around the content */
+/* Logo Styling */
+.logo img {
+  width: 50px; /* Adjust the size of the logo */
+  height: auto;
+  margin-left: 10px; /* Add space between the edge and the logo */
 }
 
-/* Header styling */
-header {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Center items vertically */
-    margin-bottom: 20px; /* Space below header */
-    padding: 10px 20px; /* Padding in header */
-    background: linear-gradient(135deg, #8E1B3A, #D5006D); /* Deep dark pink to bright pink gradient */
-    color: #ffffff; /* White text for contrast */
-}
-
-/* Logo styling */
-.logo {
-    /* Add styles for your logo here */
-}
-
-/* Navigation menu styling */
+/* Center the Navbar on the screen */
 nav {
-    flex-grow: 1; /* Allow navbar to grow and take up available space */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 nav ul {
-    list-style-type: none; /* Removes bullet points */
-    padding: 0; /* Removes default padding */
-    text-align: center; /* Center the navigation links */
-    margin: 10px 0; /* Space above and below navigation */
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline; /* Makes list items appear side by side */
-    margin: 0 15px; /* Adds spacing between links */
+  margin: 0 15px;
 }
 
 nav ul li a {
-    text-decoration: none; /* Removes underline from links */
-    font-weight: bold; /* Bold text for links */
-    color: #ffffff; /* White color for links */
-    transition: color 0.3s ease; /* Smooth transition for color change */
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
 }
 
 nav ul li a:hover {
-    color: #ff4f81; /* Brighter pink color on hover for links */
+  color: #09d6fa; /* Change the color on hover */
+  transition: color 0.3s ease;
 }
 
-/* Call to Action styling */
-.call-to-action {
-    background: linear-gradient(135deg, #D5006D, #8E1B3A); /* Inverted gradient for call to action */
-    color: #ffffff; /* White text for contrast */
-    padding: 10px 20px; /* Padding for the button */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* No underline */
-    transition: background 0.3s ease; /* Smooth transition */
+/* Call-to-Action Styling */
+.cta a {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px; /* Add space between the edge and CTA */
 }
 
-.call-to-action:hover {
-    background: linear-gradient(135deg, #8E1B3A, #D5006D); /* Darker gradient on hover */
+.cta a:hover {
+  background-color: #09d6fa;
+  transition: background-color 0.3s ease;
 }
 
-/* Section styling */
-section {
-    background-color: #ffffff; /* White background for sections */
-    padding: 20px; /* Padding inside sections */
-    margin: 20px auto; /* Center sections and add space above/below */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* More pronounced shadow for depth */
-    max-width: 800px; /* Max width for sections */
+/* Hero Section */
+.hero {
+  background: url("hero-bg.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
 }
 
-/* Image styling */
-img {
-    display: block; /* Center images */
-    margin: 0 auto; /* Center images horizontally */
-    max-width: 100%; /* Responsive images */
-    height: auto; /* Maintain aspect ratio */
+.hero-content {
+  max-width: 800px;
 }
 
-/* Table styling */
-table {
-    width: 100%; /* Table takes full width */
-    border-collapse: collapse; /* Removes gaps between table cells */
-    margin: 20px 0; /* Space above and below table */
+h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
 }
 
-table th, table td {
-    padding: 10px; /* Padding in table cells */
-    text-align: left; /* Align text to the left */
-    border-bottom: 1px solid #ddd; /* Bottom border for table rows */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-table th {
-    background: linear-gradient(135deg, #D5006D, #8E1B3A); /* Gradient for table headers */
-    color: #ffffff; /* White text for headers */
-    font-weight: bold; /* Bold text for headers */
-}
-
-/* Progress bar styling */
-progress {
-    width: 100%; /* Full width */
-    height: 20px; /* Height of the progress bar */
-    background: linear-gradient(135deg, #D5006D, #8E1B3A); /* Gradient for the progress bar */
-}
-
-/* Footer styling */
-footer {
-    text-align: center; /* Center footer content */
-    margin-top: 20px; /* Space above footer */
-    padding: 10px 0; /* Padding in footer */
-    background: linear-gradient(135deg, #8E1B3A, #D5006D); /* Gradient for footer */
-    color: #ffffff; /* White text for contrast */
-}
-
-footer p {
-    margin: 5px 0; /* Space between footer paragraphs */
+/* General Page Styling */
+body {
+  background: linear-gradient(120deg, #10b842 0%, #138aec 100%);
+  font-family: Arial, sans-serif;
 }
